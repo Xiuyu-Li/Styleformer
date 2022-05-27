@@ -1,0 +1,2 @@
+python dataset_tool.py --source=./data/artcifar-10-python.tar.gz --dest=./data/artcifar-10-python.zip
+python train.py --outdir=training-runs --data=data/artcifar-10-python.zip --gpus=4 --batch=32 --cfg=cifar --g_dict=1024,512,512 --num_layers=1,3,3 --depth=32
